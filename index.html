@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="./style/loader.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/2655b3b7cf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style/main.css" />
+
+    <!-- scripts -->
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  </head>
+  <body>
+    <!-- loader -->
+    <div
+      id="loader"
+      class="showbox z-10 w-full h-full bg-white flex justify-center align-middle"
+    >
+      <div class="loader">
+        <svg class="circular" viewBox="25 25 50 50">
+          <circle
+            class="path"
+            cx="50"
+            cy="50"
+            r="20"
+            fill="none"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+
+    <nav
+      class="dark:bg-gray-900 absolute w-full z-20 top-0 start-0 dark:border-gray-600"
+    >
+      <div class="wrapper">
+        <div class="logo">
+          <a
+            href="./index.html"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="./asstes/imgs/ITSS.png"
+              class="h-12"
+              alt="Flowbite Logo"
+            />
+          </a>
+        </div>
+        <input type="radio" name="slider" id="menu-btn" />
+        <input type="radio" name="slider" id="close-btn" />
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"
+            ><i class="fas fa-times"></i
+          ></label>
+          <!-- <li><a href="./index.html#header" class="nav-link">Home</a></li> -->
+          <li>
+            <a href="#" class="desktop-item nav-link">Company</a>
+            <input type="checkbox" id="showDrop" />
+            <label for="showDrop" class="mobile-item nav-link"
+              >Dropdown Menu</label
+            >
+            <ul class="drop-menu">
+              <li>
+                <a
+                  href="./about.html"
+                  class="text-slate-900 hover:text-[#737987]"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a href="./success.html" class="hover:text-[#737987]"
+                  >Success stories</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-item nav-link">Soultions</a>
+            <input type="checkbox" id="showMega" />
+            <label for="showMega" class="mobile-item">Mega Menu</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="./asstes/imgs/4854061.jpg" alt="" />
+                </div>
+                <div class="row">
+                  <header>Odoo</header>
+                  <ul class="mega-links">
+                    <li><a href="./services.html"> ERP Implementation </a></li>
+                    <li><a href="./services.html">Custom Development</a></li>
+                    <li><a href="./services.html">Migration Services</a></li>
+                    <li><a href="./services.html">Integration Services</a></li>
+                    <li><a href="./services.html">Technical Support</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Industry Applications</header>
+                  <ul class="mega-links">
+                    <li><a href="./services.html">Retail</a></li>
+                    <li><a href="./services.html">Trading</a></li>
+                    <li><a href="./services.html">Manufacturing</a></li>
+                    <li><a href="./services.html">Car Rental</a></li>
+                    <li><a href="./services.html">Food and Beverage</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Other services</header>
+                  <ul class="mega-links">
+                    <li><a href="./services.html">Mobile Applications</a></li>
+                    <li><a href="./services.html">Website Development</a></li>
+                    <li><a href="./services.html">Cloud Services</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="https://www.itss-c.com/contactus" class="nav-link"
+              >Contact us</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.itss-c.com/ar/helpdesk/khdm-l-ml-1"
+              class="nav-link"
+              >Customer services</a
+            >
+          </li>
+          <li>
+            <a href="https://www.itss-c.com/ar/privacy-policy" class="nav-link"
+              >Privacy policy</a
+            >
+          </li>
+        </ul>
+        <ul class="flex">
+          <div class="dropdown">
+            <button class="dropbtn text-gray-600">
+              Language <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#"
+                ><div class="flex justify-between px-5">
+                  <p>AR</p>
+                  <img
+                    src="./asstes/imgs/Flag_of_Saudi_Arabia.svg"
+                    alt=""
+                    class="w-8"
+                  /></div
+              ></a>
+              <a href="#"
+                ><div class="flex justify-between px-5">
+                  <p>EN</p>
+                  <img
+                    src="./asstes/imgs/54_star_USA_flag_design.png"
+                    alt=""
+                    class="w-8 h-5 mt-6"
+                  /></div
+              ></a>
+            </div>
+          </div>
+
+          <li>
+            <a href="https://www.itss-c.com/ar/web/login"
+              ><button
+                type="button"
+                class="text-white bg-[#233c97] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mt-6 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              >
+                Sign in
+              </button>
+            </a>
+          </li>
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"
+          ><i class="fas fa-bars"></i
+        ></label>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section id="header" class="relative overflow-hidden customBg">
+      <div
+        class="container flex justify-center align-middle items-center h-screen p-12"
+      >
+        <!-- Content -->
+        <div
+          class="w-[75%] items-center lg:items-start animate__fadeInLeft animate__animated"
+        >
+          <h1
+            class="my-8 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-600 md:text-5xl lg:text-6xl dark:text-white"
+          >
+            Grow your Business Optimize your process
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r to-[#233c97] from-[#3ea4db]"
+            >
+              with Odoo ERP</span
+            >
+          </h1>
+          <p
+            class="mb-8 mt-3 py-2 text-center text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
+          >
+            At ITSS, we are dedicated to empowering businesses. Our Odoo ERP
+            solutions streamline operations, enhance productivity, and drive
+            growth. Join the many businesses that have transformed their
+            processes and achieved success with our tailored ERP solutions.
+          </p>
+          <div class="button-container">
+            <a
+              href="https://www.itss-c.com/ar/contactus"
+              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-[#3ea4db] bg-transparent rounded-lg border-solid border-[#3ea4db] border-2 hover:bg-[#3ea4db] hover:text-white focus:ring-blue-300 dark:focus:ring-blue-900"
+            >
+              Schedule a Demo
+              <svg
+                class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- Image -->
+        <!-- <div
+            class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10 animate__fadeInRight animate__animated"
+          >
+            <img
+              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 pt-8 lg:pt-0"
+              src="./asstes/imgs/7063608.png"
+              alt=""
+            />
+          </div> -->
+      </div>
+    </section>
+
+    <!-- About Us section -->
+    <section id="about" class="about">
+      <div class="container py-28 bg-[#ffffff]">
+        <!-- Sec tittle -->
+        <div class="sec-tittle hidden text-center">
+          <h2 class="text-4xl font-bold text-gray-600 dark:text-white">
+            About us
+          </h2>
+          <div class="inline-flex items-center justify-center w-full relative">
+            <hr
+              class="w-64 h-[.15rem] my-8 bg-gray-200 border-0 rounded dark:bg-gray-700"
+            />
+            <div
+              class="absolute -translate-x-1/2 bg-white left-1/2 dark:bg-gray-900"
+            >
+              <div
+                class="h-1 w-16 bg-[#3ea4db] transition-all duration-300 ease-in-out hover:w-20"
+              ></div>
+            </div>
+          </div>
+
+          <p
+            class="pb-8 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
+          >
+            Integrated Technology Software Soultions
+          </p>
+          <p class="px-56 pb-8 text-base text-gray-500 dark:text-gray-400">
+            ITSS is a leading IT company with global presence. The company
+            specializes in providing a wide range of services to cover the
+            increasing demand for digital transformation of businesses. We
+            accomplish that by offering an integrated software package to meet
+            the most of the needs of all types and sizes of companies.
+          </p>
+          <div class="button-container">
+            <a
+              href="./about.html"
+              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-[#3ea4db] bg-transparent rounded-lg border-solid border-[#3ea4db] border-2 hover:bg-[#3ea4db] hover:text-white focus:ring-blue-300 dark:focus:ring-blue-900"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- services cards -->
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <section id="bussiness" class="services">
+      <div class="container py-28 bg-[#f3f5fa]">
+        <!-- Sec tittle -->
+        <div class="sec-tittle hidden text-center">
+          <h2 class="text-4xl font-bold text-gray-600 dark:text-white">
+            Our Services
+          </h2>
+          <div class="inline-flex items-center justify-center w-full relative">
+            <hr
+              class="w-64 h-[.15rem] my-8 bg-gray-200 border-0 rounded dark:bg-gray-700"
+            />
+            <div
+              class="absolute -translate-x-1/2 bg-white left-1/2 dark:bg-gray-900"
+            >
+              <div
+                class="h-1 w-16 bg-[#3ea4db] transition-all duration-300 ease-in-out hover:w-20"
+              ></div>
+            </div>
+          </div>
+
+          <p
+            class="mb-12 py-2 px-56 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
+          >
+            Our dedicated Consulting Team are ready to serve all your needs,
+            From Odoo Implementation, Support to creating Apps and much more.
+          </p>
+        </div>
+
+        <!-- services cards -->
+
+        <div class="serv1 flex flex-row px-28 gap-6 mb-6 overflow-hidden">
+          <div class="card hidden basis-full md:basis-1/4 hover:shadow-lg">
+            <div
+              class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <svg
+                class="w-7 h-2 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <i
+                  class="fa-solid fa-list-check fa-2xl text-left mb-8 text-[#3ea4db]"
+                ></i>
+              </svg>
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-semibold tracking-tight text-gray-600 dark:text-white"
+                >
+                  Odoo Implementation
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-500 dark:text-gray-400 h-52">
+                Our comprehensive Odoo implementation methodology stands as the
+                best in the market, designed to deliver exceptional results.
+                With a highly experienced team at the helm, we ensure every
+                aspect of your business is optimized for success.
+              </p>
+              <a
+                href="./services.html"
+                class="inline-flex font-medium items-center text-[#3ea4db] hover:underline"
+              >
+                See More
+                <svg
+                  class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 18 18"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card hidden basis-full md:basis-1/4 hover:shadow-lg">
+            <div
+              class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <svg
+                class="w-7 h-2 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <i
+                  class="fa-solid fa-shapes fa-2xl text-left mb-8 text-[#3ea4db]"
+                ></i>
+              </svg>
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-semibold tracking-tight text-gray-600 dark:text-white"
+                >
+                  Odoo Customization
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-500 dark:text-gray-400 h-52">
+                Our experienced developers can custom tailor Odoo to meet your
+                need and streamline your business processes. From simple
+                automation action processes to a fully customized special need
+                application. We can handle it all with ease.
+              </p>
+              <a
+                href="./services.html"
+                class="inline-flex font-medium items-center text-[#3ea4db] hover:underline"
+              >
+                See More
+                <svg
+                  class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 18 18"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card hidden basis-full md:basis-1/4 hover:shadow-lg">
+            <div
+              class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <svg
+                class="w-7 h-2 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <i
+                  class="fa-solid fa-chalkboard-user fa-2xl text-left mb-8 text-[#3ea4db]"
+                ></i>
+              </svg>
+              <a href="./services.html">
+                <h5
+                  class="mb-2 text-2xl font-semibold tracking-tight text-gray-600 dark:text-white"
+                >
+                  Odoo Training
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-500 dark:text-gray-400 h-52">
+                Our great Implementation methodology comes with comprehensive
+                training. Yet if all you need is training for your staff, our
+                consultants will provide your team the training they need. From
+                basic to the most comprehensive level based on their need.
+              </p>
+              <a
+                href="./services.html"
+                class="inline-flex font-medium items-center text-[#3ea4db] hover:underline"
+              >
+                See More
+                <svg
+                  class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 18 18"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card hidden basis-full md:basis-1/4 hover:shadow-lg">
+            <div
+              class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <svg
+                class="w-7 h-2 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <i
+                  class="fa-solid fa-headset text-left fa-2xl mb-8 text-[#3ea4db]"
+                ></i>
+              </svg>
+              <a href="./services.html">
+                <h5
+                  class="mb-2 text-2xl font-semibold tracking-tight text-gray-600 dark:text-white"
+                >
+                  Odoo Support
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-500 dark:text-gray-400 h-52">
+                Our dedicated support specialists are support your team with all
+                their Odoo's need from answering basic "how to do questions to
+                resolving complicated technical issues
+              </p>
+              <a
+                href="./services.html"
+                class="inline-flex font-medium items-center text-[#3ea4db] hover:underline"
+              >
+                See More
+                <svg
+                  class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 18 18"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="serv2 flex flex-row px-28 gap-6 gap-y-8 overflow-hidden">
+          <div class="card2 hidden basis-full md:basis-1/4 hover:shadow-lg">
+            <div
+              class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <svg
+                class="w-7 h-2 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <i
+                  class="fa-solid fa-mobile fa-2xl text-left mb-8 text-[#3ea4db]"
+                ></i>
+              </svg>
+              <a href="./services.html">
+                <h5
+                  class="mb-2 text-2xl font-semibold tracking-tight text-gray-600 dark:text-white"
+                >
+                  Mobile Applications
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-500 dark:text-gray-400 h-60">
+                .ITSS development team are always ready for innovations in
+                Mobile Application Development. Wither you need an Odoo custom
+                mobile interface or and independent mobile app, we are ready for
+                you.
+              </p>
+              <a
+                href="./services.html"
+                class="inline-flex font-medium items-center text-[#3ea4db] hover:underline"
+              >
+                See More
+                <svg
+                  class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 18 18"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card2 hidden basis-full md:basis-1/4 hover:shadow-lg">
+            <div
+              class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <svg
+                class="w-7 h-2 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <i
+                  class="fa-solid fa-bullhorn fa-2xl text-left mb-8 text-[#3ea4db]"
+                ></i>
+              </svg>
+              <a href="./services.html">
+                <h5
+                  class="mb-2 text-2xl font-semibold tracking-tight text-gray-600 dark:text-white"
+                >
+                  Digital Marketing
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-500 dark:text-gray-400 h-60">
+                <strong>Comprehensive Online Presence</strong> Thanks to our
+                running release system, benefit from all updates (security and
+                new features) in real time. <br />
+                <strong>Maximize your ROI with Odoo</strong> Whether you start
+                small or are already a large company, our solution adapts to
+                your needs and grows with you.
+              </p>
+              <a
+                href="./services.html"
+                class="inline-flex font-medium items-center text-[#3ea4db] hover:underline"
+              >
+                See More
+                <svg
+                  class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 18 18"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card2 hidden basis-full md:basis-1/4 hover:shadow-lg">
+            <div
+              class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <svg
+                class="w-7 h-2 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <i
+                  class="fa-solid fa-laptop-code fa-2xl text-left mb-8 text-[#3ea4db]"
+                ></i>
+              </svg>
+              <a href="./services.html">
+                <h5
+                  class="mb-2 text-2xl font-semibold tracking-tight text-gray-600 dark:text-white"
+                >
+                  Website Development
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-500 dark:text-gray-400 h-60">
+                Write one or two paragraphs describing your product or services.
+                To be successful your content needs to be useful to your
+                readers. Start with the customer – find out what they want and
+                give it to them.
+              </p>
+              <a
+                href="./services.html"
+                class="inline-flex font-medium items-center text-[#3ea4db] hover:underline"
+              >
+                See More
+                <svg
+                  class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 18 18"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card2 hidden basis-full md:basis-1/4 hover:shadow-lg">
+            <div
+              class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <svg
+                class="w-7 h-2 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <i
+                  class="fa-solid fa-cloud fa-2xl text-left mb-8 text-[#3ea4db]"
+                ></i>
+              </svg>
+              <a href="./services.html">
+                <h5
+                  class="mb-2 text-2xl font-semibold tracking-tight text-gray-600 dark:text-white"
+                >
+                  Cloud Services
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-500 dark:text-gray-400 h-60">
+                <strong>Always Improving </strong> Thanks to our running release
+                system, benefit from all updates (security and new features) in
+                real time. <br />
+                <strong>Scalable and Modular</strong> Whether you start small or
+                are already a large company, our solution adapts to your needs
+                and grows with you.
+              </p>
+              <a
+                href="./services.html"
+                class="inline-flex font-medium items-center text-[#3ea4db] hover:underline"
+              >
+                See More
+                <svg
+                  class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 18 18"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parteners section -->
+    <section id="Parteners" class="Parteners">
+      <div class="container py-28">
+        <!-- Sec tittle -->
+        <div class="sec-tittle1 text-center">
+          <h2 class="text-4xl font-bold text-gray-600 dark:text-white">
+            OUR PARTNERS!
+          </h2>
+          <div class="inline-flex items-center justify-center w-full relative">
+            <hr
+              class="w-64 h-[.15rem] my-8 bg-gray-200 border-0 rounded dark:bg-gray-700"
+            />
+            <div
+              class="absolute -translate-x-1/2 bg-white left-1/2 dark:bg-gray-900"
+            >
+              <div
+                class="h-1 w-16 bg-[#3ea4db] transition-all duration-300 ease-in-out hover:w-20"
+              ></div>
+            </div>
+          </div>
+
+          <p
+            class="mb-12 px-56 py-2 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
+          >
+            Our dedicated Consulting Team are ready to serve all your needs,
+            From Odoo Implementation, Support to creating Apps and much more.
+          </p>
+        </div>
+
+        <!-- partener imgs -->
+        <div class="scroller mb-12" data-speed="fast">
+          <ul class="tag-list scroller__inner">
+            <li>
+              <img src="./asstes/imgs/clients/1.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/2.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/3.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/4.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/5.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/6.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/7.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/8.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/9.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/10.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/11.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/12.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/13.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/14.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/15.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/16.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/17.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/18.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/19.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/20.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/21.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/22.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/23.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/24.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/25.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/26.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/27.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/28.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/29.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/30.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/31.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/32.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/33.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/34.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/35.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/36.jpg" class="w-20" alt="" />
+            </li>
+            <li>
+              <img src="./asstes/imgs/clients/37.jpg" class="w-20" alt="" />
+            </li>
+          </ul>
+        </div>
+
+        <div
+          id="default-carousel"
+          class="relative w-full"
+          data-carousel="slide"
+        >
+          <!-- Carousel wrapper -->
+          <div class="relative overflow-hidden rounded-lg">
+            <!-- Item 1 -->
+            <div
+              class="hidden h-60 duration-700 ease-in-out"
+              data-carousel-item
+            >
+              <figure class="max-w-screen-md mx-auto text-center">
+                <svg
+                  class="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 18 14"
+                >
+                  <path
+                    d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"
+                  />
+                </svg>
+                <blockquote>
+                  <p
+                    class="text-2xl italic font-medium text-gray-600 dark:text-white"
+                  >
+                    "ITSS Implementation team was exceptionally professional and
+                    highly skilled and knowledgeable. They were able to handle a
+                    complex implementation with flexibility and agility to
+                    overcome thoughts business requirement and complex
+                    operation."
+                  </p>
+                </blockquote>
+                <figcaption
+                  class="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse"
+                >
+                  <img
+                    class="w-6 h-6 rounded-full"
+                    src="./asstes/imgs/pp.jfif"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700"
+                  >
+                    <cite class="pe-3 font-medium text-gray-600 dark:text-white"
+                      >Mohammed Salem
+                    </cite>
+                    <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400"
+                      >IT Manager of Aldakheel industrial gases Planet</cite
+                    >
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="hidden h-60 duration-700 ease-in-out"
+              data-carousel-item
+            >
+              <figure class="max-w-screen-md mx-auto text-center">
+                <svg
+                  class="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 18 14"
+                >
+                  <path
+                    d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"
+                  />
+                </svg>
+                <blockquote>
+                  <p
+                    class="text-2xl italic font-medium text-gray-600 dark:text-white"
+                  >
+                    "We view ITSS as one of the strongest Odoo partners in the
+                    space with international experience. They helped us in
+                    transforming our business, modernize our operation and
+                    streamline our processes."
+                  </p>
+                </blockquote>
+                <figcaption
+                  class="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse"
+                >
+                  <img
+                    class="w-6 h-6 rounded-full"
+                    src="./asstes/imgs/pp (1).jfif"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700"
+                  >
+                    <cite class="pe-3 font-medium text-gray-600 dark:text-white"
+                      >Mohsen Ramadan
+                    </cite>
+                    <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">
+                      CFO Bin Hadiadi holding company
+                    </cite>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Itss in numbers -->
+    <section id="itssNumb" class="itssNumb bg-[#f3f5fa]">
+      <div class="container py-28">
+        <div class="sec-tittle1 text-center">
+          <h2 class="text-4xl font-bold text-gray-600 dark:text-white">
+            ITSS in Numbers
+          </h2>
+          <div class="inline-flex items-center justify-center w-full relative">
+            <hr
+              class="w-64 h-[.15rem] my-8 bg-gray-200 border-0 rounded dark:bg-gray-700"
+            />
+            <div
+              class="absolute -translate-x-1/2 bg-white left-1/2 dark:bg-gray-900"
+            >
+              <div
+                class="h-1 w-16 bg-[#3ea4db] transition-all duration-300 ease-in-out hover:w-20"
+              ></div>
+            </div>
+          </div>
+
+          <p
+            class="mb-12 px-56 py-2 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
+          >
+            Our dedicated Consulting Team are ready to serve all your needs,
+            From Odoo Implementation, Support to creating Apps and much more.
+          </p>
+        </div>
+        <div class="counter-wrapper px-56 py-8">
+          <div class="counter">
+            <i
+              class="fa-solid fa-square-poll-vertical fa-3x mb-4 text-[#3ea4db]"
+            ></i>
+            <div class="flex justify-center align-middle">
+              <p class="count" data-target="70">0</p>
+              <h6 class="text-center px-1 font-bold">+</h6>
+            </div>
+            <p>Business Verticals</p>
+          </div>
+          <div class="counter">
+            <i class="fa-solid fa-face-smile fa-3x mb-4 text-[#3ea4db]"></i>
+            <div class="flex justify-center align-middle">
+              <p class="count" data-target="1500">0</p>
+              <h6 class="text-center px-1 font-bold">+</h6>
+            </div>
+            <p>Happy Users</p>
+          </div>
+          <div class="counter">
+            <i class="fa-solid fa-handshake fa-3x mb-4 text-[#3ea4db]"></i>
+            <div class="flex justify-center align-middle">
+              <p class="count" data-target="65">0</p>
+              <h6 class="text-center px-1 font-bold">+</h6>
+            </div>
+            <p>Successful Implementations</p>
+          </div>
+          <div class="counter">
+            <img src="./asstes/imgs/odoo_gold_partner_rgb.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Itss offices -->
+    <section id="officess" class="officess">
+      <div class="container py-28">
+        <!-- Sec tittle -->
+        <div class="sec-tittle1 text-center">
+          <h2 class="text-4xl font-bold text-gray-600 dark:text-white">
+            Our Locations
+          </h2>
+          <div class="inline-flex items-center justify-center w-full relative">
+            <hr
+              class="w-64 h-[.15rem] my-8 bg-gray-200 border-0 rounded dark:bg-gray-700"
+            />
+            <div
+              class="absolute -translate-x-1/2 bg-white left-1/2 dark:bg-gray-900"
+            >
+              <div
+                class="h-1 w-16 bg-[#3ea4db] transition-all duration-300 ease-in-out hover:w-20"
+              ></div>
+            </div>
+          </div>
+
+          <p
+            class="mb-12 px-56 py-2 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
+          >
+            Our dedicated Consulting Team are ready to serve all your needs,
+            From Odoo Implementation, Support to creating Apps and much more.
+          </p>
+        </div>
+
+        <div class="countries px-56 flex gap-10 pb-12">
+          <div class="cont-1 flex w-1/2">
+            <div
+              class="flag bg-[#f3f5fa] w-24 h-24 rounded-lg flex items-center justify-center"
+            >
+              <img
+                src="./asstes/imgs/Flag_of_Egypt_(variant).png"
+                class="w-1/2"
+                alt="Flag of Egypt"
+              />
+            </div>
+            <div class="text px-8">
+              <h4 class="text-lg font-bold pb-5 text-gray-900">Egypt</h4>
+              <div class="address flex pb-5">
+                <i
+                  class="fa-solid fa-location-dot pt-1 pe-3 text-[#3ea4db]"
+                ></i>
+                <p class="text-gray-600">
+                  1st floor ,Building 32 , Street106 , Maadi, Cairo
+                </p>
+              </div>
+              <div class="phone flex pb-5">
+                <i class="fa-solid fa-phone pt-1 pe-3 text-[#3ea4db]"></i>
+                <p class="text-gray-600">
+                  +20 (103) 276-1475/ +20 (2) 946-2112
+                </p>
+              </div>
+              <div class="email flex pb-5">
+                <i class="fa-solid fa-envelope pt-1 pe-3 text-[#3ea4db]"></i>
+                <p class="text-gray-600">info@itss-c.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="cont-2 flex w-1/2">
+            <div
+              class="flag bg-[#f3f5fa] w-32 h-24 rounded-lg flex items-center justify-center"
+            >
+              <img
+                src="./asstes/imgs/Flag_of_Saudi_Arabia.svg"
+                class="w-1/2"
+                alt="Flag of KSA"
+              />
+            </div>
+            <div class="text px-8">
+              <h4 class="text-lg font-bold pb-5 text-gray-900">Saudi Arabia</h4>
+              <div class="address flex pb-5">
+                <i
+                  class="fa-solid fa-location-dot pt-1 pe-3 text-[#3ea4db]"
+                ></i>
+                <p class="text-gray-600">
+                  6th Floor, Akaria Plaza, Gate D Olaya Main St, Al Olaya,
+                  Riyadh
+                </p>
+              </div>
+              <div class="phone flex pb-5">
+                <i class="fa-solid fa-phone pt-1 pe-3 text-[#3ea4db]"></i>
+                <p class="text-gray-600">+966 (54) 676-4526</p>
+              </div>
+              <div class="email flex pb-5">
+                <i class="fa-solid fa-envelope pt-1 pe-3 text-[#3ea4db]"></i>
+                <p class="text-gray-600">info@itss-c.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="bg-slate-900 shadow dark:bg-gray-900">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="./index.html"
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="./asstes/imgs/cloud-itss-white--2500px.png"
+              class="h-8"
+              alt="Flowbite Logo"
+            />
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0 dark:text-gray-400"
+          >
+            <li>
+              <a href="./index.html" class="hover:underline me-4 md:me-6"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="./about.html" class="hover:underline me-4 md:me-6"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.itss-c.com/ar/hr-app"
+                class="hover:underline me-4 md:me-6"
+                >HR App</a
+              >
+            </li>
+            <li>
+              <a href="./services.html" class="hover:underline">Services</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span class="block text-sm text-white sm:text-center dark:text-gray-400"
+          >© 2024
+          <a href="https://flowbite.com/" class="hover:underline">ITSS™</a>. All
+          Rights Reserved.</span
+        >
+      </div>
+    </footer>
+
+    <!-- JS files -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

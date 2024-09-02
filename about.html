@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="./style/loader.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/2655b3b7cf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style/main.css" />
+
+    <!-- scripts -->
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  </head>
+  <body>
+    <!-- loader -->
+    <div
+      id="loader"
+      class="showbox z-10 w-full h-full bg-white flex justify-center align-middle"
+    >
+      <div class="loader">
+        <svg class="circular" viewBox="25 25 50 50">
+          <circle
+            class="path"
+            cx="50"
+            cy="50"
+            r="20"
+            fill="none"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <!-- NavBar -->
+    <nav class="bg-white shadow-lg z-50 mb-1">
+      <div class="wrapper">
+        <div class="logo">
+          <a
+            href="./index.html"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="./asstes/imgs/ITSS.png"
+              class="h-12"
+              alt="Flowbite Logo"
+            />
+          </a>
+        </div>
+        <input type="radio" name="slider" id="menu-btn" />
+        <input type="radio" name="slider" id="close-btn" />
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"
+            ><i class="fas fa-times"></i
+          ></label>
+          <!-- <li><a href="./index.html#header" class="nav-link">Home</a></li> -->
+          <li>
+            <a href="#" class="desktop-item nav-link">Company</a>
+            <input type="checkbox" id="showDrop" />
+            <label for="showDrop" class="mobile-item nav-link"
+              >Dropdown Menu</label
+            >
+            <ul class="drop-menu">
+              <li>
+                <a
+                  href="./about.html"
+                  class="text-slate-900 hover:text-[#737987]"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a href="./success.html" class="hover:text-[#737987]"
+                  >Success stories</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-item nav-link">Soultions</a>
+            <input type="checkbox" id="showMega" />
+            <label for="showMega" class="mobile-item">Mega Menu</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="./asstes/imgs/4854061.jpg" alt="" />
+                </div>
+                <div class="row">
+                  <header>Odoo</header>
+                  <ul class="mega-links">
+                    <li><a href="./services.html"> ERP Implementation </a></li>
+                    <li><a href="./services.html">Custom Development</a></li>
+                    <li><a href="./services.html">Migration Services</a></li>
+                    <li><a href="./services.html">Integration Services</a></li>
+                    <li><a href="./services.html">Technical Support</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Industry Applications</header>
+                  <ul class="mega-links">
+                    <li><a href="./services.html">Retail</a></li>
+                    <li><a href="./services.html">Trading</a></li>
+                    <li><a href="./services.html">Manufacturing</a></li>
+                    <li><a href="./services.html">Car Rental</a></li>
+                    <li><a href="./services.html">Food and Beverage</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Other services</header>
+                  <ul class="mega-links">
+                    <li><a href="./services.html">Mobile Applications</a></li>
+                    <li><a href="./services.html">Website Development</a></li>
+                    <li><a href="./services.html">Cloud Services</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="https://www.itss-c.com/contactus" class="nav-link"
+              >Contact us</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.itss-c.com/ar/helpdesk/khdm-l-ml-1"
+              class="nav-link"
+              >Customer services</a
+            >
+          </li>
+          <li>
+            <a href="https://www.itss-c.com/ar/privacy-policy" class="nav-link"
+              >Privacy policy</a
+            >
+          </li>
+        </ul>
+        <ul class="flex">
+          <div class="dropdown">
+            <button class="dropbtn text-gray-600">
+              Language <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#"
+                ><div class="flex justify-between px-5">
+                  <p>AR</p>
+                  <img
+                    src="./asstes/imgs/Flag_of_Saudi_Arabia.svg"
+                    alt=""
+                    class="w-8"
+                  /></div
+              ></a>
+              <a href="#"
+                ><div class="flex justify-between px-5">
+                  <p>EN</p>
+                  <img
+                    src="./asstes/imgs/54_star_USA_flag_design.png"
+                    alt=""
+                    class="w-8 h-5 mt-6"
+                  /></div
+              ></a>
+            </div>
+          </div>
+
+          <li>
+            <a href="https://www.itss-c.com/ar/web/login"
+              ><button
+                type="button"
+                class="text-white bg-[#233c97] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mt-6 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              >
+                Sign in
+              </button>
+            </a>
+          </li>
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"
+          ><i class="fas fa-bars"></i
+        ></label>
+      </div>
+    </nav>
+
+    <!-- About us  -->
+    <section id="about" class="about">
+      <div
+        class="w-full flex flex-row-reverse justify-between align-middle bg-[#f3f5fa] h-24"
+      >
+        <nav class="flex justify-center pe-36" aria-label="Breadcrumb">
+          <ol
+            class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
+          >
+            <li class="inline-flex items-center">
+              <a
+                href="./index.html"
+                class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-[#3ea4db] dark:text-gray-400 dark:hover:text-white"
+              >
+                <svg
+                  class="w-3 h-3 me-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"
+                  />
+                </svg>
+                Home
+              </a>
+            </li>
+            <li aria-current="page">
+              <div class="flex items-center">
+                <svg
+                  class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 9 4-4-4-4"
+                  />
+                </svg>
+                <span
+                  class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400"
+                  >About us</span
+                >
+              </div>
+            </li>
+          </ol>
+        </nav>
+
+        <!-- sec tittle -->
+        <div class="sec-tittle">
+          <h2
+            class="text-4xl font-bold pt-5 text-gray-600 dark:text-white ps-36"
+          >
+            About us
+          </h2>
+          <div
+            class="inline-flex items-center justify-center w-full relative"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- odoo partener -->
+    <section>
+      <div class="description flex pt-28 bg-white">
+        <div class="text w-1/2">
+          <h3
+            class="text-3xl font-bold text-gray-600 dark:text-white ps-36 pt-12"
+          >
+            Empowering Business with Odoo
+          </h3>
+          <p class="ps-36 pt-12 text-base text-gray-500 dark:text-gray-400">
+            In the dynamic field of enterprise resource planning (ERP) systems,
+            ITSS has firmly established itself as a beacon of innovation and
+            excellence. Since its foundation in 2017, ITSS has rapidly gained
+            recognition as a gold partner of Odoo, distinguishing itself through
+            a comprehensive suite of ERP solutions that empower businesses to
+            optimize their operations. ITSS provides an array of services,
+            including implementation, customization, integration, and support,
+            all designed to streamline workflows, enhance productivity, and
+            drive growth across diverse sectors.
+          </p>
+          <p class="ps-36 pt-8 text-base text-gray-500 dark:text-gray-400">
+            ITSS partnership with Odoo reflects its commitment to delivering
+            cutting-edge, customizable solutions that meet the unique needs of
+            each client, whether in retail, manufacturing, or services. ITSS's
+            impressive milestones, such as its rapid growth and successful
+            collaborations, underline its reputation as a leader in ERP systems,
+            offering businesses a powerful competitive edge in today's
+            fast-paced market.
+          </p>
+          <div class="services-btn flex justify-start">
+            <a
+              href="./services.html"
+              class="mt-8 ms-36 items-center px-5 py-3 text-base font-medium text-[#3ea4db] bg-transparent rounded-lg border-solid border-[#3ea4db] border-2 hover:bg-[#3ea4db] hover:text-white focus:ring-blue-300 dark:focus:ring-blue-900"
+            >
+              Explore our service
+            </a>
+          </div>
+        </div>
+        <div class="img w-1/2">
+          <img
+            src="./asstes/imgs/odoo_gold_partner_rgb.png"
+            alt="odoo gold"
+            class="w-100"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Milestones -->
+    <section>
+      <div class="description mx-36 flex py-28 bg-white">
+        <div class="img w-1/2">
+          <img
+            src="./asstes/imgs/Screenshot 2024-08-27 132722.png"
+            alt="odoo gold"
+            class="w-100"
+          />
+        </div>
+        <div class="text w-1/2 pt-12">
+          <h3 class="text-3xl font-bold text-gray-600 dark:text-white ps-36">
+            ITSS Background and Milestones
+          </h3>
+          <p class="ps-36 pt-12 text-base text-gray-500 dark:text-gray-400">
+            ITSS was established with a vision to transform the way businesses
+            operate through advanced ERP solutions. Since its inception, the
+            company has not only met its initial goals but has also set new
+            benchmarks in the ERP industry. Here’s a closer look at ITSS's
+            journey:
+          </p>
+        </div>
+      </div>
+      <ol
+        class="relative mx-36 pb-28 border-s border-gray-200 dark:border-gray-700"
+      >
+        <li class="mb-10 ms-6">
+          <span
+            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
+          >
+            <svg
+              class="w-2.5 h-2.5 text-[#233c97] dark:text-blue-300"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+              />
+            </svg>
+          </span>
+          <h3
+            class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white"
+          >
+            Foundation
+            <span
+              class="bg-blue-100 text-[#233c97] text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3"
+              >2017</span
+            >
+          </h3>
+          <p
+            class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
+          >
+            ITSS was established, embarking on a mission to redefine the
+            landscape of enterprise resource planning (ERP) solutions. The
+            company's founding marked the start of a journey focused on
+            delivering superior ERP systems to businesses across various
+            industries in KSA and Egypt. From its inception, ITSS has been
+            committed to providing comprehensive, customizable solutions
+            tailored to meet the unique needs of each client, helping businesses
+            streamline their operations and achieve sustainable growth. Through
+            its innovative approach to ERP implementation, customization,
+            integration, and support,
+          </p>
+          <p
+            class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
+          >
+            ITSS has empowered organizations to optimize their workflows,
+            enhance productivity, and stay competitive in today's competitive
+            marketplace. This foundational year laid the groundwork for ITSS's
+            subsequent achievements and growth, cementing its reputation as a
+            trusted partner in the ERP industry. The company's success since
+            then reflects its dedication to quality, excellence, and customer
+            satisfaction, which remain at the core of its mission today.
+          </p>
+        </li>
+        <li class="mb-10 ms-6">
+          <span
+            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
+          >
+            <i class="fa-solid fa-award fa-xs text-[#233c97]"></i>
+          </span>
+          <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+            Rapid Certification
+          </h3>
+
+          <p
+            class="text-base font-normal mb-4 text-gray-500 dark:text-gray-400"
+          >
+            ITSS's rapid ascent in the enterprise resource planning (ERP)
+            industry is marked by its impressive certification achievements.
+            Within just six months of its founding, ITSS earned gold partner
+            status with Odoo, a testament to its exceptional project delivery
+            and unwavering commitment to customer satisfaction. This rapid
+            certification reflects the company's focus on delivering
+            high-quality, tailored solutions that address the specific needs of
+            its clients. By seamlessly implementing and customizing Odoo's ERP
+            systems
+          </p>
+          <p
+            class="text-base font-normal mb-4 text-gray-500 dark:text-gray-400"
+          >
+            ITSS has empowered businesses across various sectors to streamline
+            their operations, and achieve sustainable growth. The company's
+            ability to attain this prestigious certification in such a short
+            period speaks volumes about its expertise, dedication, and
+            proficiency in managing complex ERP projects. This early milestone
+            has solidified ITSS's position as a leader in the ERP industry,
+            setting a strong foundation for its continued success and
+            innovation.
+          </p>
+        </li>
+        <li class="ms-6">
+          <span
+            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
+          >
+            <i class="fa-solid fa-land-mine-on fa-xs text-[#233c97]"></i>
+          </span>
+          <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+            Expansion
+          </h3>
+
+          <p
+            class="text-base mb-4 font-normal text-gray-500 dark:text-gray-400"
+          >
+            ITSS's growth is characterized by remarkable expansion, reflecting
+            its ability to deliver top-tier ERP solutions across diverse
+            industries. The company has successfully completed over 40 ERP
+            projects, demonstrating its expertise in managing complex
+            implementations and delivering high-quality solutions customized to
+            each client's needs. This track record has led to the onboarding of
+            over 2,000 users, providing businesses with the tools they need.
+            Additionally, ITSS has initiated significant training programs for
+            fresh graduates,
+          </p>
+          <p
+            class="text-base mb-4 font-normal text-gray-500 dark:text-gray-400"
+          >
+            contributing to the professional development of the next generation
+            of ERP experts. These initiatives not only reflect ITSS's dedication
+            to nurturing talent but also its commitment to expanding its
+            capabilities and staying at the forefront of the ERP industry. In
+            the future, ITSS aims to broaden its reach by expanding its services
+            across the Middle East and MENA region, bringing its innovative ERP
+            solutions to businesses in these dynamic markets as we recognize the
+            potential for growth and development in these regions.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="bg-slate-900 shadow dark:bg-gray-900">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="./index.html"
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="./asstes/imgs/cloud-itss-white--2500px.png"
+              class="h-8"
+              alt="Flowbite Logo"
+            />
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0 dark:text-gray-400"
+          >
+            <li>
+              <a href="./index.html" class="hover:underline me-4 md:me-6"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="./about.html" class="hover:underline me-4 md:me-6"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.itss-c.com/ar/hr-app"
+                class="hover:underline me-4 md:me-6"
+                >HR App</a
+              >
+            </li>
+            <li>
+              <a href="./services.html" class="hover:underline">Services</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span class="block text-sm text-white sm:text-center dark:text-gray-400"
+          >© 2024
+          <a href="https://flowbite.com/" class="hover:underline">ITSS™</a>. All
+          Rights Reserved.</span
+        >
+      </div>
+    </footer>
+
+    <!-- JS files -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
