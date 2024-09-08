@@ -37,6 +37,17 @@ $(document).ready(function () {
         offset: "10%", // Trigger when the element is 50% into the viewport
       }
     );
+
+    // togle mobile icons
+    $("#menu-icon").click(function () {
+      $("#menu-icon").hide(); // Hide the menu button
+      $("#close-icon").show(); // Show the close button
+    });
+
+    $("#close-icon").click(function () {
+      $("#close-icon").hide(); // Hide the close button
+      $("#menu-icon").show(); // Show the menu button
+    });
   });
 
   // drop down
@@ -50,13 +61,35 @@ $(document).ready(function () {
       $(".dropdown-content").removeClass("show");
     }
   });
+
+  // toogle up and down arrows for mob nav
+  $("label[for='showDrop']").click(function () {
+    const icon = $(this).find("i");
+
+    // Toggle between the down and up arrows
+    if (icon.hasClass("fa-chevron-down")) {
+      icon.removeClass("fa-chevron-down").addClass("fa-chevron-up");
+    } else {
+      icon.removeClass("fa-chevron-up").addClass("fa-chevron-down");
+    }
+  });
+  $("label[for='showMega']").click(function () {
+    const icon = $(this).find("i");
+
+    // Toggle between the down and up arrows
+    if (icon.hasClass("fa-chevron-down")) {
+      icon.removeClass("fa-chevron-down").addClass("fa-chevron-up");
+    } else {
+      icon.removeClass("fa-chevron-up").addClass("fa-chevron-down");
+    }
+  });
 });
 // show and hide loader
 window.addEventListener("load", function () {
   // Show the loader for 3 seconds
   setTimeout(function () {
     document.getElementById("loader").style.display = "none";
-  }, 1000); // 1000ms = 1 seconds
+  }, 3000); // 3000ms = 1 seconds
 });
 window.addEventListener("loader", function () {
   // Disable scrolling
@@ -98,7 +131,7 @@ navLinks.forEach((link) => {
     navLinks.forEach((link) => link.classList.remove("active"));
 
     // Add active class to the clicked link
-    this.classList.add("active");
+    // this.classList.add("active");
 
     // Scroll to the corresponding section
     const targetId = this.getAttribute("href");

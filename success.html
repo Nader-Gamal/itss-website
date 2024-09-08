@@ -41,17 +41,7 @@
       class="showbox z-10 w-full h-full bg-white flex justify-center align-middle"
     >
       <div class="loader">
-        <svg class="circular" viewBox="25 25 50 50">
-          <circle
-            class="path"
-            cx="50"
-            cy="50"
-            r="20"
-            fill="none"
-            stroke-width="2"
-            stroke-miterlimit="10"
-          />
-        </svg>
+        <img src="./asstes/imgs/icon-load-big-size.gif" class="w-60" alt="" />
       </div>
     </div>
 
@@ -65,8 +55,8 @@
           >
             <img
               src="./asstes/imgs/ITSS.png"
-              class="h-12"
-              alt="Flowbite Logo"
+              class="h-24 lg:h-14 md:h-20"
+              alt="itss Logo"
             />
           </a>
         </div>
@@ -74,25 +64,30 @@
         <input type="radio" name="slider" id="close-btn" />
         <ul class="nav-links">
           <label for="close-btn" class="btn close-btn"
-            ><i class="fas fa-times"></i
+            ><i class="fas fa-time"></i
           ></label>
           <!-- <li><a href="./index.html#header" class="nav-link">Home</a></li> -->
           <li>
             <a href="#" class="desktop-item nav-link">Company</a>
             <input type="checkbox" id="showDrop" />
-            <label for="showDrop" class="mobile-item nav-link"
-              >Dropdown Menu</label
+            <label for="showDrop" class="mobile-item"
+              >Company <span><i class="fa-solid fa-chevron-down ps-3"></i></span
+            ></label>
+
+            <ul
+              class="drop-menu mega-links none py-5 sm:bg-transparent md:bg-transparent lg:bg-gradient-to-r from-purple-950 to-purple-700"
             >
-            <ul class="drop-menu">
               <li>
                 <a
                   href="./about.html"
-                  class="text-slate-900 hover:text-[#737987]"
+                  class="text-[#f2f2f2] hover:text-[#737987]"
                   >About us</a
                 >
               </li>
               <li>
-                <a href="./success.html" class="hover:text-[#737987]"
+                <a
+                  href="./success.html"
+                  class="text-[#f2f2f2] hover:text-[#737987]"
                   >Success stories</a
                 >
               </li>
@@ -101,15 +96,17 @@
           <li>
             <a href="#" class="desktop-item nav-link">Soultions</a>
             <input type="checkbox" id="showMega" />
-            <label for="showMega" class="mobile-item">Mega Menu</label>
+            <label for="showMega" class="mobile-item"
+              >Soultions
+              <span><i class="fa-solid fa-chevron-down ps-3"></i></span
+            ></label>
             <div class="mega-box">
-              <div class="content">
-                <div class="row">
-                  <img src="./asstes/imgs/4854061.jpg" alt="" />
-                </div>
-                <div class="row">
+              <div
+                class="content sm:bg-transparent md:bg-transparent lg:bg-gradient-to-r from-purple-950 to-blue-400"
+              >
+                <div class="row sm:ps-0 md:ps-0 lg:ps-16">
                   <header>Odoo</header>
-                  <ul class="mega-links">
+                  <ul class="mega-links expect">
                     <li><a href="./services.html"> ERP Implementation </a></li>
                     <li><a href="./services.html">Custom Development</a></li>
                     <li><a href="./services.html">Migration Services</a></li>
@@ -155,52 +152,103 @@
               >Privacy policy</a
             >
           </li>
-        </ul>
-        <ul class="flex">
-          <div class="dropdown">
-            <button class="dropbtn text-gray-600">
-              Language <i class="fa-solid fa-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#"
-                ><div class="flex justify-between px-5">
-                  <p>AR</p>
-                  <img
-                    src="./asstes/imgs/Flag_of_Saudi_Arabia.svg"
-                    alt=""
-                    class="w-8"
-                  /></div
-              ></a>
-              <a href="#"
-                ><div class="flex justify-between px-5">
-                  <p>EN</p>
-                  <img
-                    src="./asstes/imgs/54_star_USA_flag_design.png"
-                    alt=""
-                    class="w-8 h-5 mt-6"
-                  /></div
-              ></a>
+          <li class="nav-link left-icon">
+            <div class="dropdown">
+              <button class="dropbtn text-white">
+                Language <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#"
+                  ><div class="flex justify-between px-5">
+                    <p>AR</p>
+                    <img
+                      src="./asstes/imgs/Flag_of_Saudi_Arabia.svg"
+                      alt=""
+                      class="w-8"
+                    /></div
+                ></a>
+                <a href="#"
+                  ><div class="flex justify-between px-5">
+                    <p>EN</p>
+                    <img
+                      src="./asstes/imgs/54_star_USA_flag_design.png"
+                      alt=""
+                      class="w-8 h-5 mt-6"
+                    /></div
+                ></a>
+              </div>
             </div>
-          </div>
+          </li>
 
-          <li>
+          <li class="nav-link left-icon">
             <a href="https://www.itss-c.com/ar/web/login"
               ><button
                 type="button"
-                class="text-white bg-[#233c97] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mt-6 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                class="text-white signin bg-[#233c97] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mt-6"
               >
                 Sign in
               </button>
             </a>
           </li>
         </ul>
-        <label for="menu-btn" class="btn menu-btn"
-          ><i class="fas fa-bars"></i
-        ></label>
+
+        <ul class="flex left-links">
+          <li class="nav-link">
+            <div class="dropdown">
+              <button class="dropbtn text-gray-600">
+                Language <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#"
+                  ><div class="flex justify-between px-5">
+                    <p>AR</p>
+                    <img
+                      src="./asstes/imgs/Flag_of_Saudi_Arabia.svg"
+                      alt=""
+                      class="w-8"
+                    /></div
+                ></a>
+                <a href="#"
+                  ><div class="flex justify-between px-5">
+                    <p>EN</p>
+                    <img
+                      src="./asstes/imgs/54_star_USA_flag_design.png"
+                      alt=""
+                      class="w-8 h-5 mt-6"
+                    /></div
+                ></a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-link">
+            <a href="https://www.itss-c.com/ar/web/login"
+              ><button
+                type="button"
+                class="text-white bg-[#233c97] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mt-6"
+              >
+                Sign in
+              </button>
+            </a>
+          </li>
+        </ul>
+        <div class="flex">
+          <label for="menu-btn" class="btn menu-btn" id="menu-icon">
+            <i class="fas fa-bars"></i>
+          </label>
+          <label
+            for="close-btn"
+            class="btn"
+            id="close-icon"
+            style="display: none"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+        </div>
       </div>
     </nav>
     <!--  Success Stories tittle  -->
-    <section id="Success-Stories" class="Success">
+    <section id="success-stroies" class="success">
       <div
         class="w-full flex flex-row-reverse justify-between align-middle bg-[#f3f5fa] h-24"
       >
@@ -211,7 +259,7 @@
             <li class="inline-flex items-center">
               <a
                 href="./index.html"
-                class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-[#3ea4db] dark:text-gray-400 dark:hover:text-white"
+                class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-[#3ea4db]"
               >
                 <svg
                   class="w-3 h-3 me-2.5"
@@ -244,9 +292,8 @@
                     d="m1 9 4-4-4-4"
                   />
                 </svg>
-                <span
-                  class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400"
-                  >Success Stories</span
+                <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2"
+                  >Success stories</span
                 >
               </div>
             </li>
@@ -255,10 +302,8 @@
 
         <!-- sec tittle -->
         <div class="sec-tittle">
-          <h2
-            class="text-4xl font-bold pt-5 text-gray-600 dark:text-white ps-36"
-          >
-            Success Stories
+          <h2 class="text-4xl font-bold pt-[1.6rem] text-gray-600 ps-36">
+            Success stories
           </h2>
           <div
             class="inline-flex items-center justify-center w-full relative"
@@ -269,12 +314,14 @@
 
     <!--  success stories -->
     <section>
-      <div class="description flex py-28 bg-white justify-between">
-        <div class="text w-1/2 me-12">
-          <h3 class="text-3xl font-bold text-gray-600 dark:text-white ps-36">
+      <div
+        class="description flex flex-col lg:flex-row py-28 bg-white justify-between px-24 lg:px-0"
+      >
+        <div class="text w-full lg:w-1/2 lg:me-12 text-center lg:text-start">
+          <h3 class="text-3xl font-bold text-gray-600 lg:ps-36">
             A Success Story: ITSS's Role in Supporting the London Muslim Mosque
           </h3>
-          <p class="ps-36 pt-12 text-base text-gray-500 dark:text-gray-400">
+          <p class="lg:ps-36 pt-12 text-base text-gray-500 d">
             During the pandemic, the London Muslim Mosque faced significant
             financial challenges due to the lockdowns mandated by the Ontario
             government. ITSS intervened by integrating Odoo's eCommerce and
@@ -282,14 +329,14 @@
             recovered lost income but also increased donation levels
             post-pandemic.
           </p>
-          <p class="ps-36 pt-8 text-base text-gray-500 dark:text-gray-400">
+          <p class="lg:ps-36 pt-8 text-base text-gray-500">
             Additionally, ITSS enhanced communication strategies through Email
             and Social Marketing apps and adapted the Event app to comply with
             health regulations, ensuring safe in-person attendance at the
             mosque. This comprehensive digital transformation allowed the mosque
             to sustain and even expand its operations amid the crisis.
           </p>
-          <p class="ps-36 pt-8 text-base text-gray-500 dark:text-gray-400">
+          <p class="lg:ps-36 py-8 text-base text-gray-500">
             For more details, you can visit the original article
             <span
               ><a
@@ -300,7 +347,7 @@
             >
           </p>
         </div>
-        <div class="img w-1/2 pt-3">
+        <div class="img w-full lg:w-1/2 pt-3">
           <div class="video">
             <iframe
               id="videoPlayer"
@@ -318,9 +365,11 @@
       </div>
     </section>
 
-    <footer class="bg-slate-900 shadow dark:bg-gray-900">
+    <footer class="bg-slate-900 shadow">
       <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
+        <div
+          class="flex flex-col items-center justify-center lg:flex-row lg:justify-between"
+        >
           <a
             href="./index.html"
             class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
@@ -332,7 +381,7 @@
             />
           </a>
           <ul
-            class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0 dark:text-gray-400"
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0"
           >
             <li>
               <a href="./index.html" class="hover:underline me-4 md:me-6"
@@ -356,10 +405,8 @@
             </li>
           </ul>
         </div>
-        <hr
-          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
-        />
-        <span class="block text-sm text-white sm:text-center dark:text-gray-400"
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <span class="block text-sm text-white text-center"
           >© 2024
           <a href="https://flowbite.com/" class="hover:underline">ITSS™</a>. All
           Rights Reserved.</span

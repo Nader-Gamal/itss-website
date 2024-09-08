@@ -30,17 +30,7 @@
       class="showbox z-10 w-full h-full bg-white flex justify-center align-middle"
     >
       <div class="loader">
-        <svg class="circular" viewBox="25 25 50 50">
-          <circle
-            class="path"
-            cx="50"
-            cy="50"
-            r="20"
-            fill="none"
-            stroke-width="2"
-            stroke-miterlimit="10"
-          />
-        </svg>
+        <img src="./asstes/imgs/icon-load-big-size.gif" class="w-60" alt="" />
       </div>
     </div>
 
@@ -54,8 +44,8 @@
           >
             <img
               src="./asstes/imgs/ITSS.png"
-              class="h-12"
-              alt="Flowbite Logo"
+              class="h-24 lg:h-14 md:h-20"
+              alt="itss Logo"
             />
           </a>
         </div>
@@ -63,25 +53,30 @@
         <input type="radio" name="slider" id="close-btn" />
         <ul class="nav-links">
           <label for="close-btn" class="btn close-btn"
-            ><i class="fas fa-times"></i
+            ><i class="fas fa-time"></i
           ></label>
           <!-- <li><a href="./index.html#header" class="nav-link">Home</a></li> -->
           <li>
             <a href="#" class="desktop-item nav-link">Company</a>
             <input type="checkbox" id="showDrop" />
-            <label for="showDrop" class="mobile-item nav-link"
-              >Dropdown Menu</label
+            <label for="showDrop" class="mobile-item"
+              >Company <span><i class="fa-solid fa-chevron-down ps-3"></i></span
+            ></label>
+
+            <ul
+              class="drop-menu mega-links none py-5 sm:bg-transparent md:bg-transparent lg:bg-gradient-to-r from-purple-950 to-purple-700"
             >
-            <ul class="drop-menu">
               <li>
                 <a
                   href="./about.html"
-                  class="text-slate-900 hover:text-[#737987]"
+                  class="text-[#f2f2f2] hover:text-[#737987]"
                   >About us</a
                 >
               </li>
               <li>
-                <a href="./success.html" class="hover:text-[#737987]"
+                <a
+                  href="./success.html"
+                  class="text-[#f2f2f2] hover:text-[#737987]"
                   >Success stories</a
                 >
               </li>
@@ -90,15 +85,17 @@
           <li>
             <a href="#" class="desktop-item nav-link">Soultions</a>
             <input type="checkbox" id="showMega" />
-            <label for="showMega" class="mobile-item">Mega Menu</label>
+            <label for="showMega" class="mobile-item"
+              >Soultions
+              <span><i class="fa-solid fa-chevron-down ps-3"></i></span
+            ></label>
             <div class="mega-box">
-              <div class="content">
-                <div class="row">
-                  <img src="./asstes/imgs/4854061.jpg" alt="" />
-                </div>
-                <div class="row">
+              <div
+                class="content sm:bg-transparent md:bg-transparent lg:bg-gradient-to-r from-purple-950 to-blue-400"
+              >
+                <div class="row sm:ps-0 md:ps-0 lg:ps-16">
                   <header>Odoo</header>
-                  <ul class="mega-links">
+                  <ul class="mega-links expect">
                     <li><a href="./services.html"> ERP Implementation </a></li>
                     <li><a href="./services.html">Custom Development</a></li>
                     <li><a href="./services.html">Migration Services</a></li>
@@ -144,48 +141,99 @@
               >Privacy policy</a
             >
           </li>
-        </ul>
-        <ul class="flex">
-          <div class="dropdown">
-            <button class="dropbtn text-gray-600">
-              Language <i class="fa-solid fa-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#"
-                ><div class="flex justify-between px-5">
-                  <p>AR</p>
-                  <img
-                    src="./asstes/imgs/Flag_of_Saudi_Arabia.svg"
-                    alt=""
-                    class="w-8"
-                  /></div
-              ></a>
-              <a href="#"
-                ><div class="flex justify-between px-5">
-                  <p>EN</p>
-                  <img
-                    src="./asstes/imgs/54_star_USA_flag_design.png"
-                    alt=""
-                    class="w-8 h-5 mt-6"
-                  /></div
-              ></a>
+          <li class="nav-link left-icon">
+            <div class="dropdown">
+              <button class="dropbtn text-white">
+                Language <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#"
+                  ><div class="flex justify-between px-5">
+                    <p>AR</p>
+                    <img
+                      src="./asstes/imgs/Flag_of_Saudi_Arabia.svg"
+                      alt=""
+                      class="w-8"
+                    /></div
+                ></a>
+                <a href="#"
+                  ><div class="flex justify-between px-5">
+                    <p>EN</p>
+                    <img
+                      src="./asstes/imgs/54_star_USA_flag_design.png"
+                      alt=""
+                      class="w-8 h-5 mt-6"
+                    /></div
+                ></a>
+              </div>
             </div>
-          </div>
+          </li>
 
-          <li>
+          <li class="nav-link left-icon">
             <a href="https://www.itss-c.com/ar/web/login"
               ><button
                 type="button"
-                class="text-white bg-[#233c97] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mt-6 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                class="text-white signin bg-[#233c97] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mt-6"
               >
                 Sign in
               </button>
             </a>
           </li>
         </ul>
-        <label for="menu-btn" class="btn menu-btn"
-          ><i class="fas fa-bars"></i
-        ></label>
+
+        <ul class="flex left-links">
+          <li class="nav-link">
+            <div class="dropdown">
+              <button class="dropbtn text-gray-600">
+                Language <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#"
+                  ><div class="flex justify-between px-5">
+                    <p>AR</p>
+                    <img
+                      src="./asstes/imgs/Flag_of_Saudi_Arabia.svg"
+                      alt=""
+                      class="w-8"
+                    /></div
+                ></a>
+                <a href="#"
+                  ><div class="flex justify-between px-5">
+                    <p>EN</p>
+                    <img
+                      src="./asstes/imgs/54_star_USA_flag_design.png"
+                      alt=""
+                      class="w-8 h-5 mt-6"
+                    /></div
+                ></a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-link">
+            <a href="https://www.itss-c.com/ar/web/login"
+              ><button
+                type="button"
+                class="text-white bg-[#233c97] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mt-6"
+              >
+                Sign in
+              </button>
+            </a>
+          </li>
+        </ul>
+        <div class="flex">
+          <label for="menu-btn" class="btn menu-btn" id="menu-icon">
+            <i class="fas fa-bars"></i>
+          </label>
+          <label
+            for="close-btn"
+            class="btn"
+            id="close-icon"
+            style="display: none"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+        </div>
       </div>
     </nav>
 
@@ -201,7 +249,7 @@
             <li class="inline-flex items-center">
               <a
                 href="./index.html"
-                class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-[#3ea4db] dark:text-gray-400 dark:hover:text-white"
+                class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-[#3ea4db]"
               >
                 <svg
                   class="w-3 h-3 me-2.5"
@@ -234,8 +282,7 @@
                     d="m1 9 4-4-4-4"
                   />
                 </svg>
-                <span
-                  class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400"
+                <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2"
                   >About us</span
                 >
               </div>
@@ -245,9 +292,7 @@
 
         <!-- sec tittle -->
         <div class="sec-tittle">
-          <h2
-            class="text-4xl font-bold pt-5 text-gray-600 dark:text-white ps-36"
-          >
+          <h2 class="text-4xl font-bold pt-[1.6rem] text-gray-600 ps-36">
             About us
           </h2>
           <div
@@ -259,14 +304,16 @@
 
     <!-- odoo partener -->
     <section>
-      <div class="description flex pt-28 bg-white">
-        <div class="text w-1/2">
+      <div class="description flex flex-col-reverse lg:flex-row pt-28 bg-white">
+        <div class="text w-full lg:w-1/2">
           <h3
-            class="text-3xl font-bold text-gray-600 dark:text-white ps-36 pt-12"
+            class="text-3xl font-bold text-gray-600 text-center lg:px-0 lg:text-start lg:ps-36 pt-12"
           >
             Empowering Business with Odoo
           </h3>
-          <p class="ps-36 pt-12 text-base text-gray-500 dark:text-gray-400">
+          <p
+            class="text-center px-12 lg:ps-36 lg:px-0 lg:text-start pt-12 text-base text-gray-500"
+          >
             In the dynamic field of enterprise resource planning (ERP) systems,
             ITSS has firmly established itself as a beacon of innovation and
             excellence. Since its foundation in 2017, ITSS has rapidly gained
@@ -277,7 +324,9 @@
             all designed to streamline workflows, enhance productivity, and
             drive growth across diverse sectors.
           </p>
-          <p class="ps-36 pt-8 text-base text-gray-500 dark:text-gray-400">
+          <p
+            class="text-center px-12 lg:ps-36 lg:px-0 lg:text-start pt-8 text-base text-gray-500"
+          >
             ITSS partnership with Odoo reflects its commitment to delivering
             cutting-edge, customizable solutions that meet the unique needs of
             each client, whether in retail, manufacturing, or services. ITSS's
@@ -286,20 +335,22 @@
             offering businesses a powerful competitive edge in today's
             fast-paced market.
           </p>
-          <div class="services-btn flex justify-start">
+          <div
+            class="services-btn flex lg:justify-start justify-center text-center"
+          >
             <a
               href="./services.html"
-              class="mt-8 ms-36 items-center px-5 py-3 text-base font-medium text-[#3ea4db] bg-transparent rounded-lg border-solid border-[#3ea4db] border-2 hover:bg-[#3ea4db] hover:text-white focus:ring-blue-300 dark:focus:ring-blue-900"
+              class="mt-8 lg:ms-36 items-center px-5 py-3 text-base font-medium text-[#3ea4db] bg-transparent rounded-lg border-solid border-[#3ea4db] border-2 hover:bg-[#3ea4db] hover:text-white focus:ring-blue-300"
             >
               Explore our service
             </a>
           </div>
         </div>
-        <div class="img w-1/2">
+        <div class="img w-full lg:w-1/2">
           <img
             src="./asstes/imgs/odoo_gold_partner_rgb.png"
             alt="odoo gold"
-            class="w-100"
+            class="w-2/3 m-auto"
           />
         </div>
       </div>
@@ -307,19 +358,19 @@
 
     <!-- Milestones -->
     <section>
-      <div class="description mx-36 flex py-28 bg-white">
-        <div class="img w-1/2">
+      <div class="description mx-36 flex flex-col lg:flex-row py-28 bg-white">
+        <div class="img w-full lg:w-1/2">
           <img
             src="./asstes/imgs/Screenshot 2024-08-27 132722.png"
             alt="odoo gold"
-            class="w-100"
+            class="w-full m-auto"
           />
         </div>
-        <div class="text w-1/2 pt-12">
-          <h3 class="text-3xl font-bold text-gray-600 dark:text-white ps-36">
+        <div class="text w-full text-center lg:text-start lg:w-1/2 pt-12">
+          <h3 class="text-3xl font-bold text-gray-600 lg:ps-36">
             ITSS Background and Milestones
           </h3>
-          <p class="ps-36 pt-12 text-base text-gray-500 dark:text-gray-400">
+          <p class="lg:ps-36 pt-12 text-base text-gray-500">
             ITSS was established with a vision to transform the way businesses
             operate through advanced ERP solutions. Since its inception, the
             company has not only met its initial goals but has also set new
@@ -328,15 +379,13 @@
           </p>
         </div>
       </div>
-      <ol
-        class="relative mx-36 pb-28 border-s border-gray-200 dark:border-gray-700"
-      >
+      <ol class="relative mx-36 pb-28 border-s border-gray-200">
         <li class="mb-10 ms-6">
           <span
-            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
+            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white"
           >
             <svg
-              class="w-2.5 h-2.5 text-[#233c97] dark:text-blue-300"
+              class="w-2.5 h-2.5 text-[#233c97]"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -348,17 +397,15 @@
             </svg>
           </span>
           <h3
-            class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white"
+            class="flex items-center mb-1 text-lg font-semibold text-gray-900"
           >
             Foundation
             <span
-              class="bg-blue-100 text-[#233c97] text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3"
+              class="bg-blue-100 text-[#233c97] text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3"
               >2017</span
             >
           </h3>
-          <p
-            class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
-          >
+          <p class="mb-4 text-base font-normal text-gray-500">
             ITSS was established, embarking on a mission to redefine the
             landscape of enterprise resource planning (ERP) solutions. The
             company's founding marked the start of a journey focused on
@@ -370,9 +417,7 @@
             its innovative approach to ERP implementation, customization,
             integration, and support,
           </p>
-          <p
-            class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
-          >
+          <p class="mb-4 text-base font-normal text-gray-500">
             ITSS has empowered organizations to optimize their workflows,
             enhance productivity, and stay competitive in today's competitive
             marketplace. This foundational year laid the groundwork for ITSS's
@@ -384,17 +429,15 @@
         </li>
         <li class="mb-10 ms-6">
           <span
-            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
+            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white"
           >
             <i class="fa-solid fa-award fa-xs text-[#233c97]"></i>
           </span>
-          <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+          <h3 class="mb-1 text-lg font-semibold text-gray-900">
             Rapid Certification
           </h3>
 
-          <p
-            class="text-base font-normal mb-4 text-gray-500 dark:text-gray-400"
-          >
+          <p class="text-base font-normal mb-4 text-gray-500">
             ITSS's rapid ascent in the enterprise resource planning (ERP)
             industry is marked by its impressive certification achievements.
             Within just six months of its founding, ITSS earned gold partner
@@ -405,9 +448,7 @@
             its clients. By seamlessly implementing and customizing Odoo's ERP
             systems
           </p>
-          <p
-            class="text-base font-normal mb-4 text-gray-500 dark:text-gray-400"
-          >
+          <p class="text-base font-normal mb-4 text-gray-500">
             ITSS has empowered businesses across various sectors to streamline
             their operations, and achieve sustainable growth. The company's
             ability to attain this prestigious certification in such a short
@@ -420,17 +461,13 @@
         </li>
         <li class="ms-6">
           <span
-            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
+            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white"
           >
             <i class="fa-solid fa-land-mine-on fa-xs text-[#233c97]"></i>
           </span>
-          <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-            Expansion
-          </h3>
+          <h3 class="mb-1 text-lg font-semibold text-gray-900">Expansion</h3>
 
-          <p
-            class="text-base mb-4 font-normal text-gray-500 dark:text-gray-400"
-          >
+          <p class="text-base mb-4 font-normal text-gray-500">
             ITSS's growth is characterized by remarkable expansion, reflecting
             its ability to deliver top-tier ERP solutions across diverse
             industries. The company has successfully completed over 40 ERP
@@ -441,9 +478,7 @@
             Additionally, ITSS has initiated significant training programs for
             fresh graduates,
           </p>
-          <p
-            class="text-base mb-4 font-normal text-gray-500 dark:text-gray-400"
-          >
+          <p class="text-base mb-4 font-normal text-gray-500">
             contributing to the professional development of the next generation
             of ERP experts. These initiatives not only reflect ITSS's dedication
             to nurturing talent but also its commitment to expanding its
@@ -459,9 +494,11 @@
 
     <!-- footer -->
 
-    <footer class="bg-slate-900 shadow dark:bg-gray-900">
+    <footer class="bg-slate-900 shadow">
       <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
+        <div
+          class="flex flex-col items-center justify-center lg:flex-row lg:justify-between"
+        >
           <a
             href="./index.html"
             class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
@@ -473,7 +510,7 @@
             />
           </a>
           <ul
-            class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0 dark:text-gray-400"
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0"
           >
             <li>
               <a href="./index.html" class="hover:underline me-4 md:me-6"
@@ -497,10 +534,8 @@
             </li>
           </ul>
         </div>
-        <hr
-          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
-        />
-        <span class="block text-sm text-white sm:text-center dark:text-gray-400"
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <span class="block text-sm text-white text-center"
           >© 2024
           <a href="https://flowbite.com/" class="hover:underline">ITSS™</a>. All
           Rights Reserved.</span
