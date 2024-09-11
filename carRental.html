@@ -24,14 +24,6 @@
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <!-- Include Waypoints -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-      ></script>
-      <script
-        nomodule
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-      ></script>
     </head>
   </head>
   <body>
@@ -44,7 +36,6 @@
         <img src="./asstes/imgs/icon-load-big-size.gif" class="w-60" alt="" />
       </div>
     </div>
-
     <!-- NavBar -->
     <nav class="bg-white shadow-lg z-50 mb-1">
       <div class="wrapper">
@@ -247,12 +238,12 @@
         </div>
       </div>
     </nav>
-    <!--  Success Stories tittle  -->
-    <section id="success-stroies" class="success">
+    <!--  services tittle  -->
+    <section id="services" class="services">
       <div
         class="w-full flex flex-row-reverse justify-between align-middle bg-[#f3f5fa] h-24"
       >
-        <nav class="flex justify-center pe-16 lg:pe-56" aria-label="Breadcrumb">
+        <nav class="flex justify-center pe-36" aria-label="Breadcrumb">
           <ol
             class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
           >
@@ -275,6 +266,29 @@
                 Home
               </a>
             </li>
+            <li class="inline-flex items-center">
+              <a
+                href="./services.html"
+                class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-[#3ea4db]"
+              >
+                <svg
+                  class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 9 4-4-4-4"
+                  />
+                </svg>
+                Services
+              </a>
+            </li>
             <li aria-current="page">
               <div class="flex items-center">
                 <svg
@@ -293,7 +307,7 @@
                   />
                 </svg>
                 <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2"
-                  >Success stories</span
+                  >Car rental</span
                 >
               </div>
             </li>
@@ -302,67 +316,12 @@
 
         <!-- sec tittle -->
         <div class="sec-tittle">
-          <h2
-            class="text-4xl font-bold pt-[1.6rem] text-gray-600 ps-16 lg:ps-36"
-          >
-            Success stories
+          <h2 class="text-4xl font-bold pt-[1.6rem] text-gray-600 ps-36">
+            Car rental
           </h2>
           <div
             class="inline-flex items-center justify-center w-full relative"
           ></div>
-        </div>
-      </div>
-    </section>
-
-    <!--  success stories -->
-    <section>
-      <div
-        class="description flex flex-col lg:flex-row py-28 bg-white justify-between px-24 lg:px-0"
-      >
-        <div class="text w-full lg:w-1/2 lg:me-12 text-center lg:text-start">
-          <h3 class="text-3xl font-bold text-gray-600 lg:ps-36">
-            A Success Story: ITSS's Role in Supporting the London Muslim Mosque
-          </h3>
-          <p class="lg:ps-36 pt-12 text-base text-gray-500 d">
-            During the pandemic, the London Muslim Mosque faced significant
-            financial challenges due to the lockdowns mandated by the Ontario
-            government. ITSS intervened by integrating Odoo's eCommerce and
-            Subscription apps to facilitate online donations, which not only
-            recovered lost income but also increased donation levels
-            post-pandemic.
-          </p>
-          <p class="lg:ps-36 pt-8 text-base text-gray-500">
-            Additionally, ITSS enhanced communication strategies through Email
-            and Social Marketing apps and adapted the Event app to comply with
-            health regulations, ensuring safe in-person attendance at the
-            mosque. This comprehensive digital transformation allowed the mosque
-            to sustain and even expand its operations amid the crisis.
-          </p>
-          <p class="lg:ps-36 py-8 text-base text-gray-500">
-            For more details, you can visit the original article
-            <span
-              ><a
-                href="https://www.itss-c.com/ar/blog/success-stories-3/how-itss-made-london-muslim-mosque-survive-the-pandemic-2"
-                class="text-[#3ea4db] hover:underline underline-offset-1"
-                >here</a
-              ></span
-            >
-          </p>
-        </div>
-        <div class="img w-full lg:w-1/2 pt-3">
-          <div class="video">
-            <iframe
-              id="videoPlayer"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/zFeYrw3BOVU?controls=0&enablejsapi=1"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-            ></iframe>
-            <div class="play-btn" id="playButton">
-              <ion-icon name="play"></ion-icon>
-            </div>
-          </div>
         </div>
       </div>
     </section>

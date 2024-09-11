@@ -1,53 +1,86 @@
 $(document).ready(function () {
-  // Check if Waypoints is loaded
+  // Function to check if the section is in the viewport
+  function isInViewport(element) {
+    var top_of_element = $(element).offset().top;
+    var bottom_of_element = $(element).offset().top + $(element).outerHeight();
+    var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+    var top_of_screen = $(window).scrollTop();
 
-  $(".serv1").waypoint(
-    function () {
-      $(".sec-tittle")
-        .removeClass("hidden")
-        .addClass("animate__fadeIn animate__animated");
-      $(".card")
-        .removeClass("hidden")
-        .addClass("animate__fadeInLeft animate__animated ");
-    },
-    {
-      offset: "100%", // Trigger when the element is 50% into the viewport
-    }
-  );
-  $(".serv2").waypoint(
-    function () {
-      $(".card2")
-        .removeClass("hidden")
-        .addClass("animate__fadeInRight animate__animated ");
-    },
-    {
-      offset: "10%", // Trigger when the element is 50% into the viewport
-    }
-  );
-
-  $(document).ready(function () {
-    $(".scroller").waypoint(
-      function () {
-        $(".sec-tittle1")
-          .removeClass("hidden")
-          .addClass("animate__fadeIn animate__animated");
-        console.log("Waypoint triggered"); // Debugging
-      },
-      {
-        offset: "10%", // Trigger when the element is 50% into the viewport
-      }
+    return (
+      bottom_of_screen > top_of_element && top_of_screen < bottom_of_element
     );
+  }
 
-    // togle mobile icons
-    $("#menu-icon").click(function () {
-      $("#menu-icon").hide(); // Hide the menu button
-      $("#close-icon").show(); // Show the close button
-    });
+  // Add scroll event listener
+  $(window).on("scroll", function () {
+    if (isInViewport($("#about"))) {
+      $("#about").addClass("animate__animated animate__fadeIn");
+    }
+  });
+  // Add scroll event listener
+  $(window).on("scroll", function () {
+    // Animate box1 from the left
+    if (isInViewport($("#box1"))) {
+      $("#box1").addClass("animate__animated animate__fadeInLeft");
+    }
+    // Animate box2 from the top
+    if (isInViewport($("#box2"))) {
+      $("#box2").addClass("animate__animated animate__fadeInDown");
+    }
+    // Animate box3 from the right
+    if (isInViewport($("#box3"))) {
+      $("#box3").addClass("animate__animated animate__fadeInRight");
+    }
+  });
+  // Add scroll event listener
+  $(window).on("scroll", function () {
+    if (isInViewport($("#Parteners"))) {
+      $("#Parteners").addClass("animate__animated animate__fadeIn");
+    }
+  });
+  // Add scroll event listener
+  $(window).on("scroll", function () {
+    // Animate box1 from the left
+    if (isInViewport($("#count1"))) {
+      $("#count1").addClass("animate__animated animate__fadeInLeft");
+    }
+    // Animate box2 from the top
+    if (isInViewport($("#count2"))) {
+      $("#count2").addClass("animate__animated animate__fadeInDown");
+    }
+    // Animate box3 from the right
+    if (isInViewport($("#count3"))) {
+      $("#count3").addClass("animate__animated animate__fadeInDown");
+    }
+    // Animate count4 from the right
+    if (isInViewport($("#count4"))) {
+      $("#count4").addClass("animate__animated animate__fadeInRight");
+    }
+    // country animation
+    if (isInViewport($("#cont-1"))) {
+      $("#cont-1").addClass("animate__animated animate__fadeInLeft");
+    }
+    // country animation
+    if (isInViewport($("#cont-2"))) {
+      $("#cont-2").addClass("animate__animated animate__fadeInRight");
+    }
+  });
 
-    $("#close-icon").click(function () {
-      $("#close-icon").hide(); // Hide the close button
-      $("#menu-icon").show(); // Show the menu button
-    });
+  // about us page animations
+  $(window).on("scroll", function () {
+    if (isInViewport($("#about-sec2"))) {
+      $("#about-img").addClass("animate__animated animate__fadeIn");
+    }
+  });
+  // togle mobile icons
+  $("#menu-icon").click(function () {
+    $("#menu-icon").hide(); // Hide the menu button
+    $("#close-icon").show(); // Show the close button
+  });
+
+  $("#close-icon").click(function () {
+    $("#close-icon").hide(); // Hide the close button
+    $("#menu-icon").show(); // Show the menu button
   });
 
   // drop down

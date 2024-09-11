@@ -10,12 +10,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://kit.fontawesome.com/2655b3b7cf.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./style/mediaquery.css" />
     <link rel="stylesheet" href="./style/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- scripts -->
     <!-- Include jQuery -->
@@ -33,7 +41,6 @@
         <img src="./asstes/imgs/icon-load-big-size.gif" class="w-60" alt="" />
       </div>
     </div>
-
     <!-- NavBar -->
     <nav class="bg-white shadow-lg z-50 mb-1">
       <div class="wrapper">
@@ -242,7 +249,7 @@
       <div
         class="w-full flex flex-row-reverse justify-between align-middle bg-[#f3f5fa] h-24"
       >
-        <nav class="flex justify-center pe-36" aria-label="Breadcrumb">
+        <nav class="flex justify-center pe-16 lg:pe-56" aria-label="Breadcrumb">
           <ol
             class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
           >
@@ -292,7 +299,9 @@
 
         <!-- sec tittle -->
         <div class="sec-tittle">
-          <h2 class="text-4xl font-bold pt-[1.6rem] text-gray-600 ps-36">
+          <h2
+            class="text-4xl font-bold pt-[1.6rem] text-gray-600 ps-16 lg:ps-36"
+          >
             About us
           </h2>
           <div
@@ -305,7 +314,7 @@
     <!-- odoo partener -->
     <section>
       <div class="description flex flex-col-reverse lg:flex-row pt-28 bg-white">
-        <div class="text w-full lg:w-1/2">
+        <div class="text w-full lg:w-1/2 animate__fadeInLeft">
           <h3
             class="text-3xl font-bold text-gray-600 text-center lg:px-0 lg:text-start lg:ps-36 pt-12"
           >
@@ -319,21 +328,14 @@
             excellence. Since its foundation in 2017, ITSS has rapidly gained
             recognition as a gold partner of Odoo, distinguishing itself through
             a comprehensive suite of ERP solutions that empower businesses to
-            optimize their operations. ITSS provides an array of services,
-            including implementation, customization, integration, and support,
-            all designed to streamline workflows, enhance productivity, and
-            drive growth across diverse sectors.
+            optimize their operations.
           </p>
           <p
             class="text-center px-12 lg:ps-36 lg:px-0 lg:text-start pt-8 text-base text-gray-500"
           >
             ITSS partnership with Odoo reflects its commitment to delivering
             cutting-edge, customizable solutions that meet the unique needs of
-            each client, whether in retail, manufacturing, or services. ITSS's
-            impressive milestones, such as its rapid growth and successful
-            collaborations, underline its reputation as a leader in ERP systems,
-            offering businesses a powerful competitive edge in today's
-            fast-paced market.
+            each client, whether in retail, manufacturing, or services.
           </p>
           <div
             class="services-btn flex lg:justify-start justify-center text-center"
@@ -346,7 +348,7 @@
             </a>
           </div>
         </div>
-        <div class="img w-full lg:w-1/2">
+        <div class="img w-full lg:w-1/2 animate__fadeInRight">
           <img
             src="./asstes/imgs/odoo_gold_partner_rgb.png"
             alt="odoo gold"
@@ -358,15 +360,21 @@
 
     <!-- Milestones -->
     <section>
-      <div class="description mx-36 flex flex-col lg:flex-row py-28 bg-white">
-        <div class="img w-full lg:w-1/2">
+      <div
+        id="about-sec2"
+        class="description mx-36 flex flex-col lg:flex-row py-28 bg-white"
+      >
+        <div id="about-img" class="img w-full lg:w-1/2">
           <img
             src="./asstes/imgs/Screenshot 2024-08-27 132722.png"
             alt="odoo gold"
             class="w-full m-auto"
           />
         </div>
-        <div class="text w-full text-center lg:text-start lg:w-1/2 pt-12">
+        <div
+          id="about-pg"
+          class="text w-full text-center lg:text-start lg:w-1/2 pt-12"
+        >
           <h3 class="text-3xl font-bold text-gray-600 lg:ps-36">
             ITSS Background and Milestones
           </h3>
@@ -380,7 +388,7 @@
         </div>
       </div>
       <ol class="relative mx-36 pb-28 border-s border-gray-200">
-        <li class="mb-10 ms-6">
+        <li class="mb-10 ms-6 timeline-item">
           <span
             class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white"
           >
@@ -427,7 +435,7 @@
             satisfaction, which remain at the core of its mission today.
           </p>
         </li>
-        <li class="mb-10 ms-6">
+        <li class="mb-10 ms-6 timeline-item">
           <span
             class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white"
           >
@@ -459,7 +467,7 @@
             innovation.
           </p>
         </li>
-        <li class="ms-6">
+        <li class="ms-6 timeline-item">
           <span
             class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white"
           >
@@ -544,6 +552,6 @@
     </footer>
 
     <!-- JS files -->
-    <script src="./js/main.js"></script>
+    <script src="./js/about.js"></script>
   </body>
 </html>
